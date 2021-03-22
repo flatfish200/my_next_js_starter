@@ -1,0 +1,40 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "@typescript-eslint/semi": [
+            "error",
+            "always"
+        ],
+        "@typescript-eslint/quotes": [
+            2,
+            "double"
+        ],
+        "@typescript-eslint/indent": [
+            "error",
+            4,
+            { 
+                "SwitchCase": 1,
+                "VariableDeclarator": "first" 
+            }
+        ],
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false,
+                "mode": "minimum",
+                "align": {
+                    "beforeColon": true,
+                    "afterColon": true,
+                    "on": "colon"
+                }
+            }
+        ],
+        "space-before-blocks": [
+            "error",
+            "always"
+        ]
+    }
+}
