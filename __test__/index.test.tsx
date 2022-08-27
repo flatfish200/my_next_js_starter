@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Index from "../pages/index";
+import Index from "../src/pages/index";
 
 describe("Index testing", () => {
     test("Should render content correctly", () => {
