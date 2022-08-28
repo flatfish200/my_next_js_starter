@@ -1,15 +1,16 @@
 import * as React from "react";
-import { storiesOf } from "@storybook/react";
-import Tag from "../../components/Tag";
+// import { storiesOf } from "@storybook/react";
+import Tag from "../components/Tag";
 
-storiesOf("Tag", module).add("Just that one tag", () => (
-    <Tag key={"0"} name="asdf" />
-));
 
-storiesOf("Tag", module).add("Pet tags", () => (
-    <div>
-        {["cat", "dog", "rat"].map(n => (
-            <Tag key={n} name={n} />
-        ))}
-    </div>
-)  );
+export default {
+    /* 👇 The title prop is optional.
+  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+  * to learn how to generate automatic titles
+  */
+    title     : "Tag",
+    component : Tag,
+};
+
+export const Hello = () =>  <Tag key={"0"} name="hello" />;
+export const world = () =>  <Tag key={"1"} name="world" />;
